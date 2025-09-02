@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>DJ Broadcast Final</title><link rel="stylesheet" href="style.css"/></head><body>
+<div class="wrap">
+<header><h1>DJ Broadcast — Final</h1><p class="muted">DJ (mic/system audio) → listeners. Rooms, PINs, recording, volume control.</p></header>
+
+<div class="card">
+  <div class="row"><input id="room" placeholder="Room name"/><input id="pin" placeholder="PIN (optional)"/></div>
+  <div class="row"><input id="name" placeholder="Your name (optional)"/></div>
+  <div class="row"><button id="djBtn">Start as DJ</button><button id="listenerBtn">Join as Listener</button><button id="leaveBtn" disabled>Leave</button></div>
+  <div id="status" class="muted">Not connected</div>
+</div>
+
+<div class="card" id="djControls" style="display:none;">
+  <h3>DJ Controls</h3>
+  <div class="row"><button id="micBtn">Use Microphone</button><button id="sysBtn" title="Desktop Chrome only">Share System/Tab Audio</button><button id="muteBtn" disabled>Mute</button><button id="recordBtn" disabled>Start Recording</button></div>
+  <div class="muted">Tip: On phones you can't capture other apps' audio. Use desktop tab capture for perfect YouTube.</div>
+</div>
+
+<div class="card">
+  <h3>Playback</h3>
+  <audio id="player" controls autoplay></audio>
+  <label>Volume: <input type="range" id="vol" min="0" max="1" step="0.01" value="1"/></label>
+</div>
+
+<div class="card chat">
+  <h3>Chat</h3>
+  <div id="chatbox" class="chatbox"></div>
+  <div class="row"><input id="chatInput" placeholder="Message"/><button id="sendChat">Send</button></div>
+</div>
+
+<footer class="muted">Detailed README & deployment instructions included in the ZIP.</footer>
+</div>
+<script src="/socket.io/socket.io.js"></script><script src="script.js"></script></body></html>

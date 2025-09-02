@@ -1,0 +1,15 @@
+
+:root{--bg:#000;--fg:#e6eef8;--muted:#9fb0d4;--card:rgba(255,255,255,0.03);--accent:#1e90ff;--ok:#28a745}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,Arial,Helvetica,sans-serif}
+.wrap{max-width:900px;margin:10px auto;padding:12px}
+header{text-align:center;margin-bottom:10px}
+h1{color:var(--accent);margin:6px 0}
+.card{background:var(--card);padding:12px;border-radius:12px;margin-bottom:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+input{padding:10px;border-radius:8px;border:none;background:#0a0a0c;color:#fff}
+button{background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;border:none;cursor:pointer}
+button:disabled{opacity:.6}
+.chatbox{background:#06060a;height:220px;overflow:auto;padding:8px;border-radius:8px}
+audio{width:100%;margin-top:8px}
+label{display:block;margin-top:6px;color:var(--muted)}
+.muted{color:var(--muted)}
